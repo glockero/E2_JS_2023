@@ -36,7 +36,7 @@ const pizzas = [
   {
     id: 5,
     nombre: "pizza Especial",
-    precio: 1000,
+    precio: 100,
     ingredientes: ["Muzzarella", "Tomate", "Aceitunas", "Anchoas", "Cebolla"],
   },
 
@@ -71,12 +71,12 @@ pizzas.forEach(pizza => {
 
   if (pizza.id %2 != 0) {
     
-  console.log(pizza.nombre+" "+"con el ID"+" "+"("+pizza.id+")");
+  console.log("La "+pizza.nombre+" "+"con el ID"+" "+"("+pizza.id+")");
   }
   
 });
 
-
+console.log("");
 
 //EJERCICIO B
 console.log("....EJERCICIO B....");
@@ -84,13 +84,13 @@ console.log("La o las pizzas que valen menos de $600 son:");
 
 pizzas.forEach(pizza => {
 
-  if (pizza.precio <= 600) {
+  if (pizza.precio < 600) {
     
-  console.log(pizza.nombre+""+""+" ("+"$"+pizza.precio+")");
+  console.log("La "+pizza.nombre+""+""+" ("+"$"+pizza.precio+")");
   }
   
 });
-
+console.log("");
 
 //EJERCICIO C
 console.log("....EJERCICIO C....");
@@ -99,12 +99,15 @@ pizzas.forEach(pizza => {
 
   console.log("La pizza"+" "+pizza.nombre+" tiene un precion de: "+"$"+pizza.precio);
 });
+console.log("");
 
 //EJERCICIO D
 console.log("....EJERCICIO D....");
 console.log("Los ingredientes de cada pizza son:"); 
+console.log("");
 pizzas.forEach(pizza => {
 
-  console.log("La pizza"+" "+pizza.nombre+" tiene los sigueintes ingredientes: ");
-  console.log(pizza.ingredientes);
+  console.log("La "+" "+pizza.nombre+" tiene: ");
+  console.log(pizza.ingredientes.toString());
+console.log("");
 });
